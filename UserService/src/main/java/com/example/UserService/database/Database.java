@@ -14,12 +14,15 @@ public class Database {
     private Map<Long, User> usersById = new HashMap<>();
 
     public Database() {
+
         idCounter = 1;
+
         createUser(new UserDto(0, "F. Scott Fitzgerald"));
         createUser(new UserDto(0, "Harper Lee"));
         createUser(new UserDto(0, "J.K. Rowling"));
         createUser(new UserDto(0, "George Orwell"));
         createUser(new UserDto(0, "J.D. Salinger"));
+
     }
 
     private User serializeFromDto(UserDto userDto) {
